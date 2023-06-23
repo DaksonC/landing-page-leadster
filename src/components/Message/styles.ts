@@ -8,8 +8,6 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
 
-  border: 1px solid red;
-
   button {
     width: 12rem;
     height: 2rem;
@@ -40,6 +38,28 @@ export const Container = styled.div`
       font-weight: bold;
     }
   }
+
+  @media (max-width: 768px) {
+    button {
+      width: 10rem;
+      height: 1.5rem;
+      font-size: 0.6rem;
+    }
+
+    h4 {
+      font-size: 1rem;
+    }
+
+    h1 {
+      font-size: 2rem;
+      padding: 0 0 0 1.3rem;
+    }
+
+    p {
+      font-size: 0.7rem;
+      text-align: center;
+    }
+  }
 `;
 
 export const Content = styled.div`
@@ -57,4 +77,11 @@ export const Image = styled.img`
   top: -2.5rem;
   left: -1.9rem;
   background: transparent;
+
+  @media (max-width: 768px) {
+    width: 1.8rem;
+    position: relative;
+    top: -1rem;
+    left: -0.9rem;
+  }
 `;
