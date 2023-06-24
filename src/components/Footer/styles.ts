@@ -18,6 +18,7 @@ export const Content = styled.div`
 export const HeaderStyled = styled.div`
   width: 100%;
   height: 5rem;
+  margin-top: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;

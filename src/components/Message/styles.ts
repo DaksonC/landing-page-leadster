@@ -16,6 +16,12 @@ export const Container = styled.div`
     color: ${(props) => props.theme.colors.primary};
     font-weight: bold;
     text-transform: uppercase;
+    cursor: pointer;
+
+    &:hover {
+      background: ${(props) => props.theme.colors.primary};
+      color: ${(props) => props.theme.colors.background};
+    }
   }
 
   h4 {
