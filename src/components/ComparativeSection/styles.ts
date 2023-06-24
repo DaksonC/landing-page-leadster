@@ -100,7 +100,7 @@ export const Text = styled.div`
   }
 `;
 
-export const DemoButton = styled.button`
+export const DemoButton = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
