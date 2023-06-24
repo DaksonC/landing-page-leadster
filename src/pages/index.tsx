@@ -1,4 +1,4 @@
-import { Header, Message } from '@/components'
+import { Footer, Header, Message } from '@/components'
 import Head from 'next/head'
 
 export default function Home() {
@@ -12,6 +12,7 @@ export default function Home() {
       </Head>
       <Header />
       <Message />
+      <Footer />
     </>
   )
 }
