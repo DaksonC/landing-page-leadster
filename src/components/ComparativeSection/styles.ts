@@ -117,6 +117,13 @@ export const DemoButton = styled.div`
     border: none;
     border-radius: 1.5rem;
     text-transform: uppercase;
+    cursor: pointer;
+
+    &:hover {
+      background: ${(props) => props.theme.colors.background};
+      color: ${(props) => props.theme.colors.primary};
+      border: 1px solid ${(props) => props.theme.colors.primary};
+    }
   }
 `;
 
