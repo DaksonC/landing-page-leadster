@@ -1,44 +1,61 @@
-# Decisions within the project
-- 
+# Decisões tomadas:
 
-# Code organization
-- 
+Escolhi utilizar o Next.js como biblioteca principal para o desenvolvimento do projeto, não somente pela exigência do teste, mas também, devido à sua popularidade, flexibilidade e eficiência.
+Optei por usar o styled-components como biblioteca de estilização, pois ela oferece uma sintaxe simples e intuitiva para escrever estilos em componentes React e Next.js e também permite o reuso de estilos de forma fácil e organizada.
+Decidi incorporar o pacote react-icons para ter acesso a uma ampla variedade de ícones prontos para uso em meu aplicativo, o que economiza tempo e esforço no desenvolvimento de ícones personalizados.
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Organização do código:
 
-First, run the development server:
+Separei meus componentes em arquivos individuais para facilitar a manutenção e reutilização.
+Criei uma estrutura de pastas lógica para organizar os diferentes tipos de componentes (por exemplo, "components" e "pages") e os estilos relacionados (por exemplo, "styles" ou "themes").
+Utilizei convenções de nomenclatura claras e descritivas para os nomes dos arquivos e componentes, a fim de tornar o código mais legível e compreensível.
+
+
+# Funcionalidades:
+
+Implementei funcionalidades específicas da landing page, como listagem de vídeos, usando um arquivo Json para alterar as urls.
+Utilizei componentes estilizados com styled-components para garantir uma aparência consistente, agradável e responsividade do aplicativo.
+Integrei ícones relevantes usando o react-icons para fornecer uma experiência visual atraente e melhorar a usabilidade do aplicativo.
+
+Além disso, ao longo do projeto, levei em consideração boas práticas de desenvolvimento de software, como escrever código limpo, modular e reutilizável, bem como otimizar o desempenho e garantir a acessibilidade. Também fiz uso de controle de versão (por exemplo, Git) para manter um histórico das alterações e facilitar a colaboração com outros desenvolvedores, se necessário.
+
+# Instruções de como rodar o projeto
+
+Este é um projeto [Next.js](https://nextjs.org/) inicializado com [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+## Começando
+
+Primeiro, execute o servidor de desenvolvimento:
 
 ```bash
 npm run dev
-# or
+# ou
 yarn dev
-# or
+# ou
 pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abra [http://localhost:3000](http://localhost:3000) com seu navegador para ver o resultado.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+Você pode começar a editar a página modificando `pages/index.tsx`. A página é atualizada automaticamente conforme você edita o arquivo.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+[API routes](https://nextjs.org/docs/api-routes/introduction) podem ser acessadas em [http://localhost:3000/api/hello](http://localhost:3000/api/hello). Este endpoint pode ser editado em `pages/api/hello.ts`.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+O `pages/api` diretório é mapeado para `/api/*`. Os arquivos neste diretório são tratados como [API routes](https://nextjs.org/docs/api-routes/introduction) em vez de páginas React.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Este projeto usa [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) para otimizar e carregar automaticamente o Inter, uma fonte personalizada do Google.
+## Saber mais
 
-## Learn More
+Para saber mais sobre o Next.js, consulte os seguintes recursos:
 
-To learn more about Next.js, take a look at the following resources:
+- [Next.js Documentation](https://nextjs.org/docs) - saiba mais sobre os recursos e a API do Next.js.
+- [Learn Next.js](https://nextjs.org/learn) - um tutorial interativo do Next.js.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Você pode conferir [the Next.js GitHub repository](https://github.com/vercel/next.js/) - seus comentários e contribuições são bem-vindos!
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Implantar no Vercel
 
-## Deploy on Vercel
+A maneira mais fácil de implantar seu aplicativo Next.js é usar a [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) dos criadores do Next.js.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Confira nossa [Next.js deployment documentation](https://nextjs.org/docs/deployment) para obter mais detalhes.
