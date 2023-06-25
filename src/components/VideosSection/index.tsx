@@ -1,8 +1,7 @@
 import { useState } from "react";
 import { BodyComponentVideosSection } from "./BodyComponentVideosSection";
 import { HeaderComponentVideosSection } from "./HeaderComponentVideosSection";
-import { PaginationComponentVideosSection } from "./PaginationComponentVideosSection";
-import { BodyStyled, Container, Content, HeaderStyled, Pagination } from "./styles";
+import { BodyStyled, Container, Content, HeaderStyled } from "./styles";
 
 export function VideosSection() {
   const [activeComponent, setActiveComponent] = useState("LeadGeneration");
@@ -25,9 +24,6 @@ export function VideosSection() {
             activeComponent={activeComponent}
           />
         </BodyStyled>
-        <Pagination>
-          <PaginationComponentVideosSection />
-        </Pagination>
       </Content>
     </Container>
   );
