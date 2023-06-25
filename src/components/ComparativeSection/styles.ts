@@ -2,12 +2,12 @@ import { styled } from "styled-components";
 
 export const Container = styled.div`
   width: 100%;
-  height: 48rem;
+  height: 36rem;
+  padding: 0 6rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
-  gap: 3rem;
 
   @media (max-width: 1024px) {
     width: 100%;
@@ -21,18 +21,20 @@ export const Container = styled.div`
 
 export const Image = styled.img`
   width: auto;
+  max-width: 40rem;
   height: auto;
   padding: 0 2rem;
   background: transparent;
 
   @media (max-width: 768px) {
-    width: 100%;
+    width: auto;
+    max-width: 20rem;
   }
 `;
 
 export const Content = styled.div`
-  width: 100%;
-  height: 100%;
+  width: auto;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -61,12 +63,12 @@ export const Content = styled.div`
 
   @media (max-width: 768px) {
     width: 100%;
-    height: auto;
     padding: 0 2rem;
   }
   
   @media (max-width: 1024px) {
-    width: 100%;
+    width: auto;
+    max-width: 40rem;
     height: auto;
     display: flex;
     align-items: center;

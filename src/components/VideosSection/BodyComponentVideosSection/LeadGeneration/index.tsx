@@ -1,13 +1,18 @@
-import { useEffect, useRef, useState } from "react";
+import {
+  useEffect,
+  useRef,
+  useState
+} from "react";
 import { Card } from "./Card";
 import { Modal } from "./Modal";
 import videos from '@/server/videos.json'
-import { Container, Grid } from "./styles";
 import { Pagination } from "./Pagination";
+import { Container, Grid } from "./styles";
 
 export interface IVideo {
   id: number;
   title: string;
+  description: string;
   url: string;
   previewImage: string;
 }
