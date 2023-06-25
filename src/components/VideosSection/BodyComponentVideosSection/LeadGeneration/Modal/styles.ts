@@ -58,10 +58,16 @@ export const ModalHeader = styled.div`
 
 export const ModalBody = styled.div`
   width: 100%;
+  height: 100%;
 
-  iframe {
-    width: 100%;
-    height: 15rem;
+  .loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: ${({ theme }) => theme.colors.primary};
+    background: transparent;
   }
 `;
 

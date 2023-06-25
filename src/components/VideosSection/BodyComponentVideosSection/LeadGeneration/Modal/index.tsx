@@ -8,10 +8,33 @@ import {
 } from "./styles";
 import { IVideo } from "..";
 import { AiOutlineCloudDownload } from "react-icons/ai";
+import YouTube from "react-youtube";
+import { useState } from "react";
 
 export function Modal({ video, onClose }: { video: IVideo; onClose: () => void }) {
+  const [isVideoReady, setIsVideoReady] = useState(false);
+
   function handleClose() {
     onClose();
+  }
+
+  const youtubeVideoId = extractYouTubeVideoId(video.url);
+
+  function extractYouTubeVideoId(url: string) {
+    const match = url.match(/(?:youtu\.be\/|youtube\.com\/(?:watch(?:\/|\?v=)|embed\/|v\/))([^\s?&]+)/);
+    return match?.[1] || "";
+  }
+
+  const youtubePlayerOptions = {
+    width: "100%",
+    height: "100%",
+    playerVars: {
+      autoplay: 1
+    }
+  }
+
+  function handleVideoReady() {
+    setIsVideoReady(true);
   }
 
   return (
@@ -22,7 +45,18 @@ export function Modal({ video, onClose }: { video: IVideo; onClose: () => void }
           <h4><span>Webinar: </span>{video.title}</h4>
         </ModalHeader>
         <ModalBody>
-          <iframe src={video.url} title={video.title} />
+          {
+            youtubeVideoId &&
+            <YouTube
+              videoId={youtubeVideoId}
+              opts={youtubePlayerOptions}
+              onReady={handleVideoReady}
+            />
+          }
+          {
+            !isVideoReady &&
+            <div className="loading">Carregando...</div>
+          }
         </ModalBody>
         <ModalFooter>
           <h5>Descrição</h5>
