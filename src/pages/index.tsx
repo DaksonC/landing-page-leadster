@@ -1,7 +1,23 @@
-import { ComparativeSection, Footer, Header, Message, VideosSection } from '@/components'
+import {
+  ComparativeSection,
+  Footer,
+  Header,
+  Message,
+  VideosSection
+} from '@/components'
+import { LoadingScreen } from '@/components/LoadingScreen';
 import Head from 'next/head'
+import { useEffect, useState } from 'react';
 
 export default function Home() {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 3000);
+  }, []);
+
   return (
     <>
       <Head>
@@ -10,11 +26,15 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Header />
-      <Message />
-      <VideosSection />
-      <ComparativeSection />
-      <Footer />
+      {isLoading ? <LoadingScreen /> : (
+        <>
+          <Header />
+          <Message />
+          <VideosSection />
+          <ComparativeSection />
+          <Footer />
+        </>
+      )}
     </>
   )
 }
