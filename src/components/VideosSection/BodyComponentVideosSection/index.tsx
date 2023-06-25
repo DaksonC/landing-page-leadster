@@ -1,9 +1,9 @@
 import { Agency } from "./Agency";
 import { Chatbot } from "./Chatbot";
-import { DigitalMarketing } from "./DigitalMarketing";
-import { LeadGeneration } from "./LeadGeneration";
-import { PaidMedia } from "./PaidMedia";
 import { Container } from "./styles";
+import { PaidMedia } from "./PaidMedia";
+import { LeadGeneration } from "./LeadGeneration";
+import { DigitalMarketing } from "./DigitalMarketing";
 
 interface BodyComponentVideosSectionProps {
   activeComponent: string;

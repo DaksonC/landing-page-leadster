@@ -1,12 +1,10 @@
-import { AiFillWarning } from 'react-icons/ai';
-import { Container } from './styles';
+import { Container } from "./styles";
+import { AiFillWarning } from "react-icons/ai";
 
 export function PageUnderDevelopment() {
   return (
     <Container>
-      <h1>
-        Page under development
-      </h1>
+      <h1>Page under development</h1>
       <AiFillWarning
         size={50}
         style={{

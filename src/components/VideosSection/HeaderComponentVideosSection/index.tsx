@@ -1,5 +1,10 @@
+import {
+  Container,
+  Content,
+  HamburguerButton,
+  Menu
+} from "./styles";
 import { useState } from "react";
-import { Container, Content, HamburguerButton, Menu } from "./styles";
 
 interface HeaderComponentVideosSectionProps {
   activeComponent: string;

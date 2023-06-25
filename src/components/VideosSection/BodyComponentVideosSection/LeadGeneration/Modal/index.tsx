@@ -7,9 +7,9 @@ import {
   ModalOverlay
 } from "./styles";
 import { IVideo } from "..";
-import { AiOutlineCloudDownload } from "react-icons/ai";
-import YouTube from "react-youtube";
 import { useState } from "react";
+import YouTube from "react-youtube";
+import { AiOutlineCloudDownload } from "react-icons/ai";
 
 export function Modal({ video, onClose }: { video: IVideo; onClose: () => void }) {
   const [isVideoReady, setIsVideoReady] = useState(false);

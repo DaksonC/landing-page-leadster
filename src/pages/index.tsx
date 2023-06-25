@@ -5,9 +5,9 @@ import {
   Message,
   VideosSection
 } from '@/components'
-import { LoadingScreen } from '@/components/LoadingScreen';
 import Head from 'next/head'
 import { useEffect, useState } from 'react';
+import { LoadingScreen } from '@/components/LoadingScreen';
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);

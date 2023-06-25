@@ -1,5 +1,5 @@
-import { PageUnderDevelopment } from "@/components/PageUnderDevelopment";
 import { Container } from "./styles";
+import { PageUnderDevelopment } from "@/components/PageUnderDevelopment";
 
 export function DigitalMarketing() {
   return (

@@ -1,7 +1,7 @@
 import { useState } from "react";
+import { BodyStyled, Container, Content, HeaderStyled } from "./styles";
 import { BodyComponentVideosSection } from "./BodyComponentVideosSection";
 import { HeaderComponentVideosSection } from "./HeaderComponentVideosSection";
-import { BodyStyled, Container, Content, HeaderStyled } from "./styles";
 
 export function VideosSection() {
   const [activeComponent, setActiveComponent] = useState("LeadGeneration");

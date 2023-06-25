@@ -6,8 +6,8 @@ import {
   FooterStyled,
   Image
 } from "./styles";
-import { BiLogoFacebook, BiLogoLinkedin } from "react-icons/bi";
 import { ImInstagram } from "react-icons/im";
+import { BiLogoFacebook, BiLogoLinkedin } from "react-icons/bi";
 
 export function Footer() {
   return (
