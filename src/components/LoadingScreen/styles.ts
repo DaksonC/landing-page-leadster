@@ -1,12 +1,10 @@
 import { styled } from "styled-components";
 
-export const LoadingScreenContainer = styled.div`
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+export const LoadingScreenContainer = styled.div` 
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 `;
 
 export const ImageLoading = styled.img`
