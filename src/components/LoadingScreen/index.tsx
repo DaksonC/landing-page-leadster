@@ -1,11 +1,10 @@
-import { ImageLoading, LoadingScreenContainer } from "./styles";
+import { ImageLoadingContent, LoadingScreenContainer } from "./styles";
 
 export function LoadingScreen() {
   return (
     <LoadingScreenContainer>
-      <div className="stack-loading">
-        <ImageLoading src="/favicon.ico" alt="loading" />
-      </div>
+      <ImageLoadingContent />
+      <h1>Carregando...</h1>
     </LoadingScreenContainer>
   )
 }

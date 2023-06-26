@@ -95,16 +95,16 @@ export const Menu = styled.div<MenuProps>`
 
   @media (max-width: 768px) {
     display: ${({ $isOpen }) => ($isOpen ? "flex" : "none")};
+    justify-content: center;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
-    padding: 1rem 0;
+    gap: 0.5rem;
     position: absolute;
-    top: 100%;
+    top: 96%;
     left: 0;
     width: 100%;
-    height: auto;
+    height: 15rem;
     background-color: ${({ theme }) => theme.colors.background};
     border-bottom: 1px solid ${({ theme }) => theme.colors.line};
     z-index: 1;
