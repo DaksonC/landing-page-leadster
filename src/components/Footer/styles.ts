@@ -143,7 +143,7 @@ export const BodyStyled = styled.div`
 
 export const FooterStyled = styled.div`
   width: 100%;
-  height: 5rem;
+  height: 2.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
