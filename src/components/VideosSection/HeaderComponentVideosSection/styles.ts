@@ -21,7 +21,6 @@ export const Container = styled.div`
     margin-bottom: 1rem;
     padding: 0.2rem 0;
     flex-direction: column;
-    border: 1px solid red;
   }
 `;
 
