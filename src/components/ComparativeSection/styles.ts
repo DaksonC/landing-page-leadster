@@ -42,19 +42,19 @@ export const Content = styled.div`
 
   h3 {
     font-size: 1.5rem;
-    color: ${(props) => props.theme.colors.text};
+    color: ${({ theme }) => theme.colors.text};
   }
 
   h2 {
     font-size: 2.5rem;
     font-weight: bold;
     margin: 0.1rem 0;
-    color: ${(props) => props.theme.colors.text};
+    color: ${({ theme }) => theme.colors.text};
   }
 
   p {
     margin-bottom: 0.5rem;
-    color: ${(props) => props.theme.colors.text};
+    color: ${({ theme }) => theme.colors.text};
 
     span {
       font-weight: bold;
@@ -79,7 +79,7 @@ export const Content = styled.div`
 
 export const Text = styled.div`
   padding-right: 2rem;
-  border-bottom: 2px solid ${(props) => props.theme.colors.line};
+  border-bottom: 2px solid ${({ theme }) => theme.colors.line};
 
   @media (max-width: 768px) {
     width: 100%;
@@ -113,8 +113,8 @@ export const DemoButton = styled.div`
   button {
     width: 12rem;
     height: 3rem;
-    background: ${(props) => props.theme.colors.primary};
-    color: ${(props) => props.theme.colors.background};
+    background: ${({ theme }) => theme.colors.primary};
+    color: ${({ theme }) => theme.colors.background};
     padding: 0.5rem 1rem;
     border: none;
     border-radius: 1.5rem;
@@ -122,9 +122,9 @@ export const DemoButton = styled.div`
     cursor: pointer;
 
     &:hover {
-      background: ${(props) => props.theme.colors.background};
-      color: ${(props) => props.theme.colors.primary};
-      border: 1px solid ${(props) => props.theme.colors.primary};
+      background: ${({ theme }) => theme.colors.background};
+      color: ${({ theme }) => theme.colors.primary};
+      border: 1px solid ${({ theme }) => theme.colors.primary};
     }
   }
 `;
@@ -151,12 +151,12 @@ export const ImageCardAndStarContent = styled.div`
   p {
     font-size: 0.7rem;
     margin: 0 0.3rem;
-    color: ${(props) => props.theme.colors.text};
+    color: ${({ theme }) => theme.colors.text};
   }
 
   h4 {
     padding: 0 0.5rem;
-    color: ${(props) => props.theme.colors.text};
+    color: ${({ theme }) => theme.colors.text};
   }
 `;
 

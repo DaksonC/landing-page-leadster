@@ -6,13 +6,13 @@ export const Container = styled.footer`
   display: flex;
   align-items: center;
   justify-content: center;
-  background: ${(props) => props.theme.colors.background};
+  background: ${({ theme }) => theme.colors.background};
 `;
 
 export const Content = styled.div`
   width: 50rem;
   height: 30rem;
-  background: ${(props) => props.theme.colors.background};
+  background: ${({ theme }) => theme.colors.background};
 `;
 
 export const HeaderStyled = styled.div`
@@ -23,12 +23,12 @@ export const HeaderStyled = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background: ${(props) => props.theme.colors.background};
+  background: ${({ theme }) => theme.colors.background};
 
   p {
     font-size: 0.7rem;
-    color: ${(props) => props.theme.colors.line};
-    background: ${(props) => props.theme.colors.background};
+    color: ${({ theme }) => theme.colors.line};
+    background: ${({ theme }) => theme.colors.background};
   }
 
   @media (max-width: 768px) {
@@ -57,7 +57,7 @@ export const BodyStyled = styled.div`
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
-  background: ${(props) => props.theme.colors.background};
+  background: ${({ theme }) => theme.colors.background};
 
   .links,
   .cases,
@@ -69,36 +69,36 @@ export const BodyStyled = styled.div`
     justify-content: center;
     flex-direction: column;
     gap: 1rem;
-    background: ${(props) => props.theme.colors.background};
+    background: ${({ theme }) => theme.colors.background};
   }
   
   h1 {
     font-size: 1rem;
     padding-bottom: 1rem;
-    color: ${(props) => props.theme.colors.text};
-    background: ${(props) => props.theme.colors.background};
+    color: ${({ theme }) => theme.colors.text};
+    background: ${({ theme }) => theme.colors.background};
   }
   
   p {
     font-size: 0.8rem;
-    color: ${(props) => props.theme.colors.line};
-    background: ${(props) => props.theme.colors.background};
+    color: ${({ theme }) => theme.colors.grayDarkest};
+    background: ${({ theme }) => theme.colors.background};
     
     span {
-      background: ${(props) => props.theme.colors.background};
-      color: ${(props) => props.theme.colors.text};
+      background: ${({ theme }) => theme.colors.background};
+      color: ${({ theme }) => theme.colors.text};
     }
   }
   
   button {
     border: none;
-    background: transparent;
     font-size: 0.8rem;
-    color: ${(props) => props.theme.colors.line};
+    color: ${({ theme }) => theme.colors.grayDarkest};
+    background: transparent;
     cursor: pointer;
 
     &:hover {
-      color: ${(props) => props.theme.colors.primary};
+      color: ${({ theme }) => theme.colors.primary};
     }
   }
 
@@ -107,7 +107,11 @@ export const BodyStyled = styled.div`
       width: 2.5rem;
       height: 2.5rem;
       border-radius: 50%;
-      background: ${(props) => props.theme.colors.secondary};
+      background: ${({ theme }) => theme.colors.grayLight};
+
+      &:hover {
+        background: ${({ theme }) => theme.colors.primary};
+      }
     }
     
     .social-media__icon {
@@ -117,6 +121,12 @@ export const BodyStyled = styled.div`
       flex-direction: row;
       gap: 0.5rem;
       background: transparent;
+
+      button {
+        &:hover {
+          color: ${({ theme }) => theme.colors.background};
+        }
+      }
     }
   }
 
@@ -148,17 +158,17 @@ export const FooterStyled = styled.div`
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
-  background: ${(props) => props.theme.colors.background};
+  background: ${({ theme }) => theme.colors.background};
 
   p {
     font-size: 0.8rem;
-    color: ${(props) => props.theme.colors.line};
-    background: ${(props) => props.theme.colors.background};
+    color: ${({ theme }) => theme.colors.grayDarkest};
+    background: ${({ theme }) => theme.colors.background};
 
     a {
       text-decoration: none;
-      color: ${(props) => props.theme.colors.primary};
-      background: ${(props) => props.theme.colors.background};
+      color: ${({ theme }) => theme.colors.primary};
+      background: ${({ theme }) => theme.colors.background};
     }
   }
 

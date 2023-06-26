@@ -43,13 +43,28 @@ export function Footer() {
             <h1>Siga a Leadster</h1>
             <div className="social-media__icon">
               <button>
-                <BiLogoLinkedin size={30} />
+                <BiLogoLinkedin
+                  size={30}
+                  style={{
+                    backgroundColor: 'transparent',
+                  }}
+                />
               </button>
               <button>
-                <BiLogoFacebook size={30} />
+                <BiLogoFacebook
+                  size={30}
+                  style={{
+                    backgroundColor: 'transparent',
+                  }}
+                />
               </button>
               <button>
-                <ImInstagram size={20} />
+                <ImInstagram
+                  size={20}
+                  style={{
+                    backgroundColor: 'transparent',
+                  }}
+                />
               </button>
             </div>
             <p><span>E-mail: </span>contato@leadster.com.br</p>

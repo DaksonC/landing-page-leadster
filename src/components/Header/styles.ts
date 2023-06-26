@@ -6,7 +6,7 @@ export const Container = styled.header`
   display: flex;
   align-items: center;
   justify-content: center;
-  background: ${(props) => props.theme.colors.background};
+  background: ${({ theme }) => theme.colors.background};
 
   @media (max-width: 768px) {
     height: 4rem;
@@ -17,7 +17,7 @@ export const Image = styled.img`
   width: auto;
   height: auto;
   margin: 0 20px;
-  background: ${(props) => props.theme.colors.background};
+  background: ${({ theme }) => theme.colors.background};
 
   @media (max-width: 768px) {
     width: 130px;

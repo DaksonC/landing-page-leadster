@@ -11,34 +11,34 @@ export const Container = styled.div`
   button {
     width: 12rem;
     height: 2rem;
-    border: 2px solid ${(props) => props.theme.colors.primary};
+    border: 2px solid ${({ theme }) => theme.colors.primary};
     border-radius: 1rem 1rem 1rem 0.2rem;
-    color: ${(props) => props.theme.colors.primary};
+    color: ${({ theme }) => theme.colors.primary};
     font-weight: bold;
     text-transform: uppercase;
     cursor: pointer;
 
     &:hover {
-      background: ${(props) => props.theme.colors.primary};
-      color: ${(props) => props.theme.colors.background};
+      background: ${({ theme }) => theme.colors.primary};
+      color: ${({ theme }) => theme.colors.background};
     }
   }
 
   h4 {
-    color: ${(props) => props.theme.colors.text};
+    color: ${({ theme }) => theme.colors.text};
     font-size: 2.5rem;
     margin: 1rem 0;
   }
 
   h1 {
-    color: ${(props) => props.theme.colors.primary};
+    color: ${({ theme }) => theme.colors.primary};
     font-weight: bold;
     font-size: 5rem;
     padding: 0 0 0 2rem;
   }
 
   p {
-    color: ${(props) => props.theme.colors.text};
+    color: ${({ theme }) => theme.colors.text};
 
     span {
       font-weight: bold;
@@ -75,7 +75,7 @@ export const Content = styled.div`
   align-items: center;
   padding: 1rem 0 0 1rem;
   margin-bottom: 1rem;
-  border-bottom: 1px solid ${(props) => props.theme.colors.line};
+  border-bottom: 1px solid ${({ theme }) => theme.colors.line};
 `;
 
 export const Image = styled.img`
