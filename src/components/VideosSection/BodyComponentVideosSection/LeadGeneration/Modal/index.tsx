@@ -83,7 +83,7 @@ export function Modal({ video, onClose }: { video: IVideo; onClose: () => void }
                 }}
                 size={20}
               />
-              <button>Presentation.ppt</button>
+              <button>Document.doc</button>
             </div>
             <div className="presentation">
               <AiOutlineCloudDownload
@@ -121,7 +121,7 @@ export function Modal({ video, onClose }: { video: IVideo; onClose: () => void }
               }}
               size={20}
             />
-            <button>Presentation.ppt</button>
+            <button>Document.doc</button>
           </div>
           <div className="presentation">
             <AiOutlineCloudDownload
@@ -143,7 +143,7 @@ export function Modal({ video, onClose }: { video: IVideo; onClose: () => void }
               }}
               size={20}
             />
-            <button>Presentation.ppt</button>
+            <button>Folder.zip</button>
           </div>
         </div>
       </ModalContainerDownload>
