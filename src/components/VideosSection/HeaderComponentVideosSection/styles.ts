@@ -13,9 +13,15 @@ export const Container = styled.div`
   background-color: ${({ theme }) => theme.colors.background};
   border-bottom: 1px solid ${({ theme }) => theme.colors.line};
 
+  
   @media (max-width: 768px) {
-    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    min-height: 9rem;
+    margin-bottom: 1rem;
     padding: 0.2rem 0;
+    flex-direction: column;
+    border: 1px solid red;
   }
 `;
 
