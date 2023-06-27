@@ -5,7 +5,7 @@ import {
   Message,
   VideosSection
 } from '@/components'
-import Head from 'next/head'
+import Head from 'next/head';
 import { useEffect, useState } from 'react';
 import { LoadingScreen } from '@/components/LoadingScreen';
 
