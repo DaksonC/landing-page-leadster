@@ -5,6 +5,7 @@ interface MenuProps {
 }
 
 export const Container = styled.div`
+  width: 100%;
   height: 100%;
   display: flex;
   flex-direction: row;
@@ -12,7 +13,6 @@ export const Container = styled.div`
   justify-content: space-between;
   background-color: ${({ theme }) => theme.colors.background};
   border-bottom: 1px solid ${({ theme }) => theme.colors.line};
-
   
   @media (max-width: 768px) {
     width: 100%;
@@ -71,10 +71,9 @@ export const Menu = styled.div<MenuProps>`
   display: flex;
   flex-direction: row;
   align-items: flex-end;
-  justify-content: space-between;
   background-color: ${({ theme }) => theme.colors.background};
   padding-bottom: 1rem;
-
+  
   button {
     width: auto;
     height: auto;
@@ -105,9 +104,6 @@ export const Menu = styled.div<MenuProps>`
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
-    position: absolute;
-    top: 96%;
-    left: 0;
     width: 100%;
     height: 15rem;
     background-color: ${({ theme }) => theme.colors.background};
@@ -116,7 +112,7 @@ export const Menu = styled.div<MenuProps>`
   }
 `;
 
-export const Content = styled.div`
+export const FilterSelect = styled.div`
   width: auto;
   height: 100%;
   display: flex;
@@ -130,7 +126,8 @@ export const Content = styled.div`
     color: ${({ theme }) => theme.colors.text};
     font-weight: bold;
     background-color: transparent;
-    margin-right: 1rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.2rem;
   }
 
   select {

@@ -1,6 +1,6 @@
 import {
   Container,
-  Content,
+  FilterSelect,
   HamburguerButton,
   Menu
 } from "./styles";
@@ -61,13 +61,13 @@ export function HeaderComponentVideosSection(
           Mídia Paga
         </button>
       </Menu>
-      <Content>
+      <FilterSelect>
         <p>Ordenar por</p>
         <select>
           <option value="recentes">Mais recentes</option>
           <option value="antigos">Mais antigos</option>
         </select>
-      </Content>
+      </FilterSelect>
     </Container>
   );
 }
