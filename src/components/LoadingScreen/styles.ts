@@ -10,6 +10,7 @@ export const LoadingScreenContainer = styled.div`
   position: absolute;
   top: 50%;
   left: 0;
+  background: transparent;
 
   h1{
     color: ${({ theme }) => theme.colors.primary};
@@ -22,6 +23,7 @@ export const ImageLoadingContent = styled.div`
   border-radius: 50%;
   border: 4px solid ${({ theme }) => theme.colors.background};
   border-top: 4px solid ${({ theme }) => theme.colors.primary};
+  background: transparent;
   animation: spin 0.99s infinite linear;
 
   @keyframes spin {
@@ -32,4 +34,10 @@ export const ImageLoadingContent = styled.div`
       transform: rotate(359deg);
     }
   }
+`;
+
+export const BackgroundIsActiveLoading = styled.div`
+  width: 100vw;
+  height: 100vh;
+  background: transparent;
 `;
