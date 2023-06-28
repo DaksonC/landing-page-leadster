@@ -17,7 +17,7 @@ Utilizei convenções de nomenclatura claras e descritivas para os nomes dos arq
 
 Implementei funcionalidades específicas da landing page, como listagem de vídeos, usando um arquivo Json para alterar as urls.
 Utilizei componentes estilizados com styled-components para garantir uma aparência consistente, agradável e responsividade do aplicativo.
-Integrei ícones relevantes usando o react-icons para fornecer uma experiência visual atraente e melhorar a usabilidade do aplicativo.
+Integrei ícones relevantes usando o react-icons para fornecer uma experiência visual atraente e melhorar a usabilidade do aplicativo. As animações criadas com frame-motion teve um objetivo nobre, poque foram uitlizadas para oferecer um feedback ao usuário ao navegar pela página.
 
 Além disso, ao longo do projeto, levei em consideração boas práticas de desenvolvimento de software, como escrever código limpo, modular e reutilizável, bem como otimizar o desempenho e garantir a acessibilidade. Também fiz uso de controle de versão (por exemplo, Git) para manter um histórico das alterações e facilitar a colaboração com outros desenvolvedores, se necessário.
 
