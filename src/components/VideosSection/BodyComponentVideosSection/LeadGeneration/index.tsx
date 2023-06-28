@@ -51,7 +51,7 @@ export function LeadGeneration() {
     setCurrentPage(pageNumber);
 
     if (pageNumber === paginatedVideos.length) {
-      menuRef.current?.scrollIntoView({ behavior: "smooth" });
+      menuRef.current?.scrollIntoView({ behavior: "auto" });
     }
   }
 

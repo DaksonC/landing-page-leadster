@@ -51,6 +51,7 @@ export const IconPlay = styled.div`
 
 export const IconPlayContainer = styled.div`
   position: relative;
+  background: transparent;
 
   &:hover {
     ${IconPlay} {
