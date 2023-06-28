@@ -3,6 +3,7 @@
 Escolhi utilizar o Next.js como biblioteca principal para o desenvolvimento do projeto, não somente pela exigência do teste, mas também, devido à sua popularidade, flexibilidade e eficiência.
 Optei por usar o styled-components como biblioteca de estilização, pois ela oferece uma sintaxe simples e intuitiva para escrever estilos em componentes React e Next.js e também permite o reuso de estilos de forma fácil e organizada.
 Decidi incorporar o pacote react-icons para ter acesso a uma ampla variedade de ícones prontos para uso em meu aplicativo, o que economiza tempo e esforço no desenvolvimento de ícones personalizados.
+Por fim, utilizei o Framer Motion para as ainimações do projeto. O Framer Motion é uma biblioteca de animação para React que oferece uma API simples e poderosa para criar animações naturais e realistas com facilidade.
 
 
 # Organização do código:
@@ -26,8 +27,17 @@ Este é um projeto [Next.js](https://nextjs.org/) inicializado com [`create-next
 
 ## Começando
 
-Primeiro, execute o servidor de desenvolvimento:
-
+Primeiro, clone o projeto:
+```bash
+git clone https://github.com/DaksonC/landing-page-leadster/
+cd landing-page-leadster
+npm i
+# ou
+yarn 
+# ou
+pnpm i
+```
+Depois, execute o servidor de desenvolvimento:
 ```bash
 npm run dev
 # ou
