@@ -69,3 +69,10 @@ Você pode conferir [the Next.js GitHub repository](https://github.com/vercel/ne
 A maneira mais fácil de implantar seu aplicativo Next.js é usar a [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) dos criadores do Next.js.
 
 Confira nossa [Next.js deployment documentation](https://nextjs.org/docs/deployment) para obter mais detalhes.
+
+# Teste com o Google Lighthouse
+O Lighthouse é uma ferramenta automatizada de código aberto para melhorar o desempenho, a qualidade e a correção de seus aplicativos da web.
+Ao auditar uma página, o Lighthouse executa uma barragem de testes na página e, em seguida, gera um relatório sobre o desempenho da página. A partir daqui, você pode usar os testes com falha como indicadores sobre o que pode fazer para melhorar seu aplicativo.
+
+## Resultado:
+<img src="https://github.com/DaksonC/landing-page-leadster/assets/81385265/7544f954-99b0-4126-942f-d07d542a0fe5" />
